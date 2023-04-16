@@ -1,0 +1,10 @@
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+  <form (ngSubmit)="updateJobCategory()" style="max-width: 200px;">
+    <h1 style="color: red; font-weight: bold; text-align: center;">Update Job Category</h1>
+    <div style="max-width: 100%;">
+      <label for="name_Category">Name:</label>
+      <input type="text" id="name_Category" name="name_Category" [(ngModel)]="JobCategory.name_Category" style="max-width: 100%;" required>
+    </div>
+    <button type="submit">Update Job category</button>
+  </form>
+</div>

@@ -1,0 +1,19 @@
+<div class="flex h-screen w-full overflow-hidden">
+
+    <div class="flex grow flex-col content-start bg-gray-100 ">
+      <!-- Header -->
+      <app-navbar-component></app-navbar-component>
+      <!-- main content -->
+      <div
+        class="scrollbar-thumb-rounded scrollbar-track-rounded grow overflow-auto scrollbar-thin scrollbar-thumb-white scrollbar-track-gray-100 ">
+        <router-outlet></router-outlet>
+      </div>
+  
+      <!-- footer -->
+      <app-footer-component></app-footer-component>
+  
+      <!-- Bottom bar -->
+      <!-- <app-bottom-navbar></app-bottom-navbar> -->
+    </div>
+  </div>
+  

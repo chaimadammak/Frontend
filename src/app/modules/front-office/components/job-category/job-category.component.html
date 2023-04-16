@@ -1,0 +1,11 @@
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+  <form (ngSubmit)="onSubmit()" style="max-width: 200px;">
+    <h1 style="color: red; font-weight: bold; text-align: center;">Add Job Category</h1>
+    <div style="max-width: 100%;">
+      <label for="name_Category">Name:</label>
+      <input type="text" id="CategoryName" name="CategoryName" [(ngModel)]="CategoryName" style="max-width: 100%;" required>
+    </div>
+    <button type="submit">Add category</button>
+  </form>
+</div>
+

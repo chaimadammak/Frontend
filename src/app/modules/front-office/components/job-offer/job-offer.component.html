@@ -1,0 +1,33 @@
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+  <form (ngSubmit)="AddJobOffer()" style="max-width: 200px;">
+
+    <h1 style="color: red; font-weight: bold; text-align: center;">Add Job Offer</h1>
+    <div style="max-width: 100%;">
+      <label for="name_Category">Title </label>
+      <input type="text" id="CategoryName" name="CategoryName" [(ngModel)]="title" style="max-width: 100%;" required>
+    </div>
+    <br>
+    <div style="max-width: 100%;">
+      <label for="name_Category">Subject  </label>
+      <input type="text" id="CategoryName" name="CategoryName" [(ngModel)]="subject" style="max-width: 100%;" required>
+    </div>
+    <br>
+    <div style="max-width: 100%;">
+      <label for="name_Category">Category   </label>
+      <select [(ngModel)]="selectedCategoryId" name="category">
+        <option *ngFor="let category of categories" [value]="category.id_Job_Category">{{category.name_Category}}</option>
+      </select>
+    </div>
+    <br>
+    <div style="max-width: 100%;">
+      <label for="image">Image</label>
+      <input type="file" (change)="onFileSelected($event)">
+    </div>
+    <br>
+    <button type="submit">Add Job Offer</button>
+  </form>
+  
+</div>
+
+
+  
